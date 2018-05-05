@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+  Construction
+*/
+/*
+@media (min-width: $screen-md) { 
+  p{
+    font-size: 50px;
+    color: red;
+    line-height: 1.3em;
+    padding: 1em 1% 0em 1%;
+    text-align: left;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+*/
+.construction {
+  text-align: center;
+  background: orange; }
+  .construction h1 {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.1em 0em 0.1em 0em; }
+
+.navbar.navbar-default {
+  border: 0;
+  border-radius: 0;
+  background: #212121;
+  margin-bottom: 0em; }
+  .navbar.navbar-default .nav-text {
+    color: white; }
+  .navbar.navbar-default #basic-nav-dropdown {
+    color: white; }
+
+.carousel img {
+  min-height: 450px;
+  max-height: 450px;
+  border: 0.75px solid black; }
+
+.carousel h3 {
+  font-size: 24px;
+  font-weight: 500; }
+
+.carousel p {
+  font-size: 18px; }
+
+.carousel #keyboard {
+  color: white; }
+
+.carousel #wtc {
+  color: white; }
+
+.carousel #code {
+  color: white; }
+
+/* End Bootstrap */
+.blog-video {
+  text-align: center;
+  padding-bottom: 5em; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  font-size: 13px; }
+
+* {
+  box-sizing: border-box; }
+
+.app-layout {
+  height: auto;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1); }
+
+.header {
+  text-align: center;
+  padding: 1em 0em 1em 0em;
+  color: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.1); }
+  .header h1 {
+    font-size: 32px; }
+  .header h3 {
+    font-size: 16px;
+    padding-top: .7em; }
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.quote {
+  text-align: center;
+  padding: 2em 0em 2em 0em;
+  color: rgba(0, 0, 0, 0.7); }
+  .quote p {
+    padding: .3em;
+    font-size: 22px; }
+  .quote cite {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px; }
+  .quote footer {
+    color: rgba(0, 0, 0, 0.7); }
+
+.skills {
+  color: white;
+  height: auto;
+  background-color: rgba(63, 81, 181, 0.7);
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  text-align: center; }
+  .skills .skills-top {
+    border-top: 1px solid black; }
+  .skills #progress {
+    margin-top: 1em; }
+  .skills .pc {
+    padding-top: 3.5em; }
+  .skills #skill {
+    text-align: center;
+    font-size: 32px;
+    height: 500px; }
+  .skills h2 {
+    font-size: 16px;
+    padding: .4em 0em 0em 0em;
+    font-weight: 700; }
+  .skills h3 {
+    font-size: 14px;
+    padding: .4em 0em .5em 0em;
+    font-weight: 600; }
+  .skills .skill-badges {
+    padding-top: 1em; }
+  .skills .badge {
+    padding: .6em;
+    margin-left: .5em;
+    background: #212121; }
+  .skills .tool-box {
+    padding: 0.5em 0em 0.5em 0em; }
+    .skills .tool-box h3 {
+      font-size: 26px; }
+    .skills .tool-box p {
+      font-size: 17px;
+      color: blue;
+      line-height: 1.3em;
+      padding: 1em 1% 0em 1%;
+      text-align: left;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center; }
+  .skills .box {
+    height: 100%;
+    padding-left: 25%;
+    padding-right: 25%; }
+  .skills hr {
+    width: 150px; }
+
+.form-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .form-container label {
+    font-weight: 800;
+    font-size: 18px;
+    color: white;
+    padding: 0em 0em .5em 0em; }
+  .form-container input {
+    font-size: 14px; }
+  .form-container textarea {
+    font-size: 14px; }
+
+.projects-container {
+  text-align: center; }
+  .projects-container h1 {
+    font-size: 46px;
+    padding: .5em 0em 0em 0em; }
+  .projects-container h3 {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 0.5em 0em 0em 0em;
+    opacity: 0.9; }
+  .projects-container p {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1.2em 20% 0em 20%;
+    line-height: 1.3em; }
+  .projects-container #soundbox-project {
+    color: white;
+    background: #feb236;
+    height: 300px;
+    border: 1px solid black; }
+    .projects-container #soundbox-project #bmp {
+      color: white; }
+    .projects-container #soundbox-project p {
+      color: brown; }
+    .projects-container #soundbox-project h1 {
+      color: black; }
+    .projects-container #soundbox-project h3 {
+      color: black; }
+  .projects-container #nba {
+    height: 300px;
+    background: #ff7b25;
+    border-bottom: 1px solid black; }
+  .projects-container #ig {
+    height: 300px;
+    background: #6b5b95;
+    border-bottom: 1px solid black; }
+
+.your-project-container {
+  text-align: center;
+  background: lightblue;
+  height: 300px; }
+  .your-project-container h1 {
+    font-weight: 800;
+    font-size: 50px;
+    padding: .4em 0em .4em 0em; }
+  .your-project-container p {
+    padding: .4em 0em .4em 0em;
+    font-size: 18px;
+    font-weight: 500; }
+
+.footer {
+  background: #0A191E;
+  height: 175px; }
