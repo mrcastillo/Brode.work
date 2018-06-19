@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './css/index.css';
 import { Switch, Route } from "react-router-dom";
-import { Grid, Row, Col } from "react-bootstrap";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";

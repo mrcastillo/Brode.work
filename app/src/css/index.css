@@ -51,17 +51,7 @@ table {
 */
 /*
 @media (min-width: $screen-md) { 
-  p{
-    font-size: 50px;
-    color: red;
-    line-height: 1.3em;
-    padding: 1em 1% 0em 1%;
-    text-align: left;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-  }
+
 }
 */
 .construction {
@@ -72,11 +62,19 @@ table {
     font-weight: 600;
     padding: 0.1em 0em 0.1em 0em; }
 
+/* BootStrap Begin */
 .navbar.navbar-default {
   border: 0;
   border-radius: 0;
   background: #212121;
-  margin-bottom: 0em; }
+  margin-bottom: 0em;
+  font-size: 22px; }
+  .navbar.navbar-default a {
+    text-align: center;
+    padding-top: .85em;
+    padding-bottom: .85em; }
+  .navbar.navbar-default .dropdown-toggle {
+    color: white; }
   .navbar.navbar-default .nav-text {
     color: white; }
   .navbar.navbar-default #basic-nav-dropdown {
@@ -95,31 +93,41 @@ table {
   font-size: 18px; }
 
 .carousel #keyboard {
-  color: white; }
+  color: white;
+  font-weight: 600; }
 
 .carousel #wtc {
-  color: white; }
+  color: white;
+  font-weight: 600; }
 
 .carousel #code {
-  color: white; }
+  color: white;
+  background: black;
+  font-weight: 600; }
 
 /* End Bootstrap */
 .blog-video {
   text-align: center;
   padding-bottom: 5em; }
 
+/* Part One */
+.app-layout {
+  height: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1); }
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: white;
-  font-size: 13px; }
+  font-size: 13px;
+  margin-top: 50px;
+  overflow-x: hidden; }
+
+.nav-text {
+  color: white; }
 
 * {
   box-sizing: border-box; }
-
-.app-layout {
-  height: auto;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.1); }
 
 .header {
   text-align: center;
@@ -127,10 +135,12 @@ body {
   color: rgba(0, 0, 0, 0.7);
   background: rgba(255, 255, 255, 0.1); }
   .header h1 {
-    font-size: 32px; }
+    font-size: 32px;
+    font-weight: 800; }
   .header h3 {
     font-size: 16px;
-    padding-top: .7em; }
+    padding-top: .7em;
+    font-weight: 600; }
 
 .main {
   display: flex;
@@ -143,10 +153,12 @@ body {
   color: rgba(0, 0, 0, 0.7); }
   .quote p {
     padding: .3em;
-    font-size: 22px; }
+    font-size: 22px;
+    font-weight: 600; }
   .quote cite {
     color: rgba(0, 0, 0, 0.7);
-    font-size: 16px; }
+    font-size: 16px;
+    font-weight: 900; }
   .quote footer {
     color: rgba(0, 0, 0, 0.7); }
 
@@ -166,34 +178,32 @@ body {
     text-align: center;
     font-size: 32px;
     height: 500px; }
-  .skills h2 {
-    font-size: 16px;
-    padding: .4em 0em 0em 0em;
-    font-weight: 700; }
-  .skills h3 {
-    font-size: 14px;
-    padding: .4em 0em .5em 0em;
-    font-weight: 600; }
   .skills .skill-badges {
-    padding-top: 1em; }
+    padding-top: 2em;
+    padding-bottom: 2em; }
   .skills .badge {
     padding: .6em;
     margin-left: .5em;
     background: #212121; }
-  .skills .tool-box {
-    padding: 0.5em 0em 0.5em 0em; }
-    .skills .tool-box h3 {
-      font-size: 26px; }
-    .skills .tool-box p {
-      font-size: 17px;
-      color: blue;
-      line-height: 1.3em;
-      padding: 1em 1% 0em 1%;
-      text-align: left;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-content: center; }
+  .skills .tool-box h3 {
+    font-size: 28px;
+    font-weight: 900;
+    color: black;
+    padding-bottom: .5em; }
+  .skills .tool-box .info-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 150px; }
+  .skills .tool-box p {
+    font-size: 18px;
+    line-height: 1.4em;
+    border-left: 12px solid orange;
+    background-color: black;
+    padding: 1em 1em 2em 1em;
+    border-radius: .5em;
+    color: gold; }
   .skills .box {
     height: 100%;
     padding-left: 25%;
@@ -204,11 +214,17 @@ body {
 .form-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 3em; }
+  .form-container h1 {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 1em; }
   .form-container label {
     font-weight: 800;
     font-size: 18px;
-    color: white;
+    color: black;
     padding: 0em 0em .5em 0em; }
   .form-container input {
     font-size: 14px; }

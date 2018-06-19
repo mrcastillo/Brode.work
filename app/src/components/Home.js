@@ -10,7 +10,7 @@ class Home extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            message: "Hello,\n\nI need help understanding how technology can make me more beautiful.\n\nRegards\nMarilyn Monroe"
+            message: "Hello,\n\nI need an amazing website or web application for my business!\n\nThanks,\nBusiness Partner"
         }
 
         this._onTextChange = this._onTextChange.bind(this);
@@ -30,8 +30,8 @@ class Home extends React.Component {
             <Grid fluid>
                 <Row className={"header show-grid"}>
                     <Col xs={12} lg={12}>
-                        <h1>Anthony Castillo</h1>
-                        <h3>Application's Engineer</h3>
+                        <h1>Application Portfolio</h1>
+                        <h3>Anthony Castillo</h3>
                     </Col>
                 </Row>
 
@@ -39,21 +39,23 @@ class Home extends React.Component {
                     <Col>
                         <Carousel>
                             <Carousel.Item>
-                                <img width={900} height={500} alt="900x500" src="https://raw.githubusercontent.com/MrRio/vtop/master/docs/example.gif" />
+                                <img width={900} height={500} alt="900x500" src={keyboard} />
                                 <Carousel.Caption>
-                                    <h3 id={"code"}>Solutions Expert</h3>
+                                    <h3 id={"wtc"}>Modern Web Development</h3>
+                                    <p>Using some of the newest tools and languages</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img width={900} height={500} alt="900x500" src={keyboard} />
+                                <img width={900} height={500} alt="900x500" src="https://raw.githubusercontent.com/MrRio/vtop/master/docs/example.gif" />
                                 <Carousel.Caption>
-                                    <h3 id={"wtc"}>Technology Consultant</h3>
+                                    <h3 id={"code"}>Applications Expert</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img width={900} height={500} alt="900x500" src="https://www.som.com/FILE/14790/7worldtrade_1400x800_davidsundberg_esto_03jpg.jpg" />
                                 <Carousel.Caption>
-                                    <h3 id={"code"}>7 World Trade Center Office</h3>
+                                    <h3 id={"wtc"}>7 World Trade Center</h3>
+                                    <p>IPsoft, Expert Managed Systems</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
@@ -78,15 +80,17 @@ class Home extends React.Component {
                     </Col>
                     
                     <Col lg={12} sm={12} md={12} xs={12} className={"tool-box"}>
-                        <h3>Application Engineer</h3>
+                        <h3>Design </h3>
                         
-                        <p>I spend most of my time working for my company IPsoft in the Financial District of Manhattan in World Trade Center. Here I am able to use all of the skills that
-                        I have learned in technology to benefit our clients. Our team deals with high critical financial applications in a fast spaced environment. We are responsible for the
-                        management of these applications, from deployments to troubleshooting in production. Keeping up with the demands of finance can be overwhelming but fun at times. However
-                        I still manage to work on my own projects outside of work.
-                        </p>
-                        
+                        <div className={"info-box"}>
+                            <p>Web Development with NodeJS.<br/><br/><kbd>Issue bad issue</kbd> .</p>
+                        </div>
+
                         <div className={"skill-badges"}>
+                            <span className="badge badge-pill badge-primary">JavaScript</span>
+                            <span className="badge badge-pill badge-primary">NodeJS</span>
+                            <span className="badge badge-pill badge-primary">MySQL</span>
+                            <span className="badge badge-pill badge-primary">MongoDB</span>
                             <span className="badge badge-pill badge-primary">WebSphere</span>
                             <span className="badge badge-pill badge-primary">WebLogic</span>
                             <span className="badge badge-pill badge-primary">WebSeal</span>
@@ -98,6 +102,26 @@ class Home extends React.Component {
                         
                         <hr style={{ background: "white" }} />
                     </Col>
+                </Row>
+                <Row className={"form-container"}>
+                    <form>
+                        <Col className="form-group">
+                            <h1>Need a Web Developer?</h1>
+                            <label htmlFor="name" id={"name"}>My Name</label>
+                            <input type="text" className={"form-control"} id={"name"} placeholder={".."} />
+                        </Col>
+                        <Col className="form-group">
+                            <label htmlFor="email">Email Address</label>
+                            <input type="email" className={"form-control"} id={"email"} placeholder={"...@gmail.com"} />
+                        </Col>
+                        <Col className="form-group">
+                            <label htmlFor="message">Inquiry</label>
+                            <textarea onChange={this._onTextChange} className={"form-control"} id={"message"} rows={"7"} cols={"59"} placeholder={this.state.message}></textarea>
+                        </Col>
+                        <Col className="form-group">
+                            <input type="submit" className={"form-control"} id={"email"} placeholder={"mm@icon.com"} />
+                        </Col>
+                    </form>
                 </Row>
             </Grid>
         )
