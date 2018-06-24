@@ -54,15 +54,27 @@ table {
 
 }
 */
+* {
+  box-sizing: border-box; }
+
 .construction {
   text-align: center;
-  background: orange; }
-  .construction h1 {
-    font-size: 14px;
-    font-weight: 600;
-    padding: 0.1em 0em 0.1em 0em; }
+  background: lightgreen; }
+  .construction h3 {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 0.3em 0em 0.3em 0em; }
 
 /* BootStrap Begin */
+.navbar-toggle {
+  text-align: center; }
+
+.navbar-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
 .navbar.navbar-default {
   border: 0;
   border-radius: 0;
@@ -75,8 +87,6 @@ table {
     padding-bottom: .85em; }
   .navbar.navbar-default .dropdown-toggle {
     color: white; }
-  .navbar.navbar-default .nav-text {
-    color: white; }
   .navbar.navbar-default #basic-nav-dropdown {
     color: white; }
 
@@ -84,10 +94,6 @@ table {
   min-height: 450px;
   max-height: 450px;
   border: 0.75px solid black; }
-
-.carousel h3 {
-  font-size: 24px;
-  font-weight: 500; }
 
 .carousel p {
   font-size: 18px; }
@@ -102,14 +108,17 @@ table {
 
 .carousel #code {
   color: white;
-  background: black;
-  font-weight: 600; }
+  border-radius: 0.5em;
+  padding: 0.4em;
+  position: relative;
+  bottom: 250px;
+  font-weight: 600;
+  font-size: 32px; }
+
+.nav-text {
+  color: white; }
 
 /* End Bootstrap */
-.blog-video {
-  text-align: center;
-  padding-bottom: 5em; }
-
 /* Part One */
 .app-layout {
   height: 100%;
@@ -123,12 +132,6 @@ body {
   margin-top: 50px;
   overflow-x: hidden; }
 
-.nav-text {
-  color: white; }
-
-* {
-  box-sizing: border-box; }
-
 .header {
   text-align: center;
   padding: 1em 0em 1em 0em;
@@ -137,10 +140,6 @@ body {
   .header h1 {
     font-size: 32px;
     font-weight: 800; }
-  .header h3 {
-    font-size: 16px;
-    padding-top: .7em;
-    font-weight: 600; }
 
 .main {
   display: flex;
@@ -284,3 +283,7 @@ body {
 .footer {
   background: #0A191E;
   height: 175px; }
+
+.blog-video {
+  text-align: center;
+  padding-bottom: 5em; }

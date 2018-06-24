@@ -11,9 +11,6 @@ class NavBar extends React.Component {
         return(
             <Navbar inverse collapseOnSelect fixedTop fluid>
                 <Navbar.Header>
-                    <Navbar.Brand>
-                        <a href="#brand">Tech Brothers</a>
-                    </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>

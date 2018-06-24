@@ -30,39 +30,24 @@ class Home extends React.Component {
             <Grid fluid>
                 <Row className={"header show-grid"}>
                     <Col xs={12} lg={12}>
-                        <h1>Application Portfolio</h1>
-                        <h3>Anthony Castillo</h3>
+                        <h1></h1>
                     </Col>
                 </Row>
 
                 <Row className={"main show-grid"}>
                     <Col>
-                        <Carousel>
-                            <Carousel.Item>
-                                <img width={900} height={500} alt="900x500" src={keyboard} />
-                                <Carousel.Caption>
-                                    <h3 id={"wtc"}>Modern Web Development</h3>
-                                    <p>Using some of the newest tools and languages</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
+                        <Carousel indicators={false} controls={false}>
                             <Carousel.Item>
                                 <img width={900} height={500} alt="900x500" src="https://raw.githubusercontent.com/MrRio/vtop/master/docs/example.gif" />
                                 <Carousel.Caption>
-                                    <h3 id={"code"}>Applications Expert</h3>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img width={900} height={500} alt="900x500" src="https://www.som.com/FILE/14790/7worldtrade_1400x800_davidsundberg_esto_03jpg.jpg" />
-                                <Carousel.Caption>
-                                    <h3 id={"wtc"}>7 World Trade Center</h3>
-                                    <p>IPsoft, Expert Managed Systems</p>
+                                    <h1 id={"code"}>Achieve your online vision</h1>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
                     </Col>
                 </Row>
 
-
+                {/*
                 <Row className={"quote"}>
                     <Col lg={12}>
                         <blockquote className={"blockquote"}>
@@ -71,8 +56,9 @@ class Home extends React.Component {
                         </blockquote>
                     </Col>
                 </Row>
-
-
+                */}
+                
+                {/*
                 <Row className={"skills"} style={{"border-top": "0.75px solid black"}}>
                     
                     <Col lg={12} className={"pc"} md={12} sm={12} xs={12}>
@@ -103,6 +89,8 @@ class Home extends React.Component {
                         <hr style={{ background: "white" }} />
                     </Col>
                 </Row>
+
+                */}
                 <Row className={"form-container"}>
                     <form>
                         <Col className="form-group">

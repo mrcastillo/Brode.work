@@ -13,7 +13,7 @@ class App extends Component {
       <Switch>
         <div className={"app-layout"}>
           <div className={"construction"}>
-            <h1>Currently under construction</h1>
+            <h3>Blockchain Storage Applications Now Available.</h3>
           </div>
 
           <NavBar />
