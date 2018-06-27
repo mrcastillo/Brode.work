@@ -17,7 +17,9 @@ $screen-lg: 1200px;
 
 }
 */
-
+body {
+  overflow-x: hidden;
+}
 * {
   box-sizing: border-box;
 }
@@ -25,10 +27,11 @@ $screen-lg: 1200px;
 .construction {
   text-align: center;
   background: lightgreen;
+  border-bottom: .75px solid black;
 
   h3 {
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 500;
     padding: 0.3em 0em 0.3em 0em;
   }
 }
@@ -95,6 +98,7 @@ $screen-lg: 1200px;
     bottom: 250px;
     font-weight: 600;
     font-size: 32px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 }
 
@@ -108,7 +112,7 @@ $screen-lg: 1200px;
 .app-layout {
   height: 100%;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: whitesmoke;
 }
 
 body {
@@ -121,13 +125,14 @@ body {
 
 .header {
   text-align: center;
-  padding: 1em 0em 1em 0em;
+  padding: 2em 0em 2em 0em;
   color: rgba(0, 0, 0, 0.7);
   background: rgba(255, 255, 255, 0.1);
   
   h1 {
+    color: black;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 900;
   }
 }
 
@@ -135,6 +140,13 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background-color: rgb(59, 55, 75);
+  padding: 1.5em 0em 1.5em 0em;
+
+  img {
+    border: 1px solid black;
+    border-radius: .25em;
+  }
 }
 
 .quote {
@@ -237,14 +249,16 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding-top: 5em;
+  padding-top: 3em; 
   padding-bottom: 3em;
-
+  background-color: #f4e2ff;
+  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   h1 {
     
     font-size: 26px;
     font-weight: 600;
-    padding-bottom: 1em;
+
   }
   label {
     font-weight: 800;
@@ -258,6 +272,10 @@ body {
   }
   textarea {
     font-size: 14px;
+  }
+
+  #contact {
+    text-align: center;
   }
 }
 
@@ -338,6 +356,55 @@ body {
   }
 }
 
+.info {
+  border-top: 1px solid black;
+  margin-top: 4em;
+
+  h1 {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+  }
+
+  h6 {
+    padding: 0.5em 0em 0.5em 0em;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+  }
+
+  p {
+    padding: 0.5em 1em 1em 1em;
+    height: 195px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3em;
+    background-color: rgb(175, 93, 211);
+    border-radius: .35em;
+    border: 1px solid black;
+  }
+  
+  #wservice {
+    background-color: rgb(208, 191, 240);
+    height: 375px;
+    border-bottom: 1px solid black;
+    padding: 3em 2em 0em 2em;
+  }
+
+  #bservice {
+    background-color: rgb(208, 191, 240);
+    height: 375px;
+    border-bottom: 1px solid black;
+    padding: 3em 2em 0em 2em;
+  }
+}
+
+.blog-video {
+  text-align: center;
+  padding-bottom: 5em;
+}
 
 .footer {
   background: #0A191E;
@@ -346,7 +413,3 @@ body {
 
 
 
-.blog-video {
-  text-align: center;
-  padding-bottom: 5em;
-}

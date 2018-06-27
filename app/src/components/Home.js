@@ -30,7 +30,7 @@ class Home extends React.Component {
             <Grid fluid>
                 <Row className={"header show-grid"}>
                     <Col xs={12} lg={12}>
-                        <h1></h1>
+                        <h1>Web Development</h1>
                     </Col>
                 </Row>
 
@@ -40,7 +40,7 @@ class Home extends React.Component {
                             <Carousel.Item>
                                 <img width={900} height={500} alt="900x500" src="https://raw.githubusercontent.com/MrRio/vtop/master/docs/example.gif" />
                                 <Carousel.Caption>
-                                    <h1 id={"code"}>Achieve your online vision</h1>
+                                    <h1 id={"code"}>Build Your App</h1>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
@@ -91,10 +91,29 @@ class Home extends React.Component {
                 </Row>
 
                 */}
+
+                <Row className={"info"}>
+                    <Col xs={"6"} id={"wservice"}>
+                        <h1><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></h1>
+                        <h1>Web Development Services</h1>
+                        <h6>Simple Modern Websites</h6>
+                        <p>We offer modern web development. Ask us for help with your web development needs, whether it is making a website for your business,
+                        a portfolio for your work, an ecommernce site, or even general questions about how to get started. No project is too small to talk about.</p>
+                    </Col>
+                    <Col xs={"6"} id={"bservice"}>
+                        <h1><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h1>
+                        <h1>Take advantage of SiaCoin</h1>
+                        <h6>Blockchain Apps</h6>
+                        <p>We offer a cheap storage solution that takes advantage of new Blockchain technology. With Siacoin we are able to provide storage for 
+                        a lower price than Amazon.</p>
+                    </Col>
+                </Row>
                 <Row className={"form-container"}>
                     <form>
+                        <Col xs={"12"} id={"contact"}>
+                            <h1>Have An Inquiry?</h1>
+                        </Col>
                         <Col className="form-group">
-                            <h1>Need a Web Developer?</h1>
                             <label htmlFor="name" id={"name"}>My Name</label>
                             <input type="text" className={"form-control"} id={"name"} placeholder={".."} />
                         </Col>

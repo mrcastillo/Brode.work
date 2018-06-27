@@ -6,7 +6,7 @@ function handleSelect(selectedKey) {
     alert(`selected ${selectedKey}`);
 }
 
-class NavBar extends React.Component { 
+class NavBar extends React.Component {
     render(){
         return(
             <Navbar inverse collapseOnSelect fixedTop fluid>
